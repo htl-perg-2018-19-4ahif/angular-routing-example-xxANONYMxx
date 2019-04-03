@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Url } from 'url';
 
 interface IPokemon{
-  name;
-  url;
+  name:string;
+  url:Url;
 }
 interface IPokemonList{
   results:IPokemon[];

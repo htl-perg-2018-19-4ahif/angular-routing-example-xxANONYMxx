@@ -8,11 +8,11 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 })
 export class PokemonDetailComponent implements OnInit {
 
-  pokeID;
+  public pokeID:Number;
 
   constructor(private route: ActivatedRoute) {
     this.route.params.subscribe(params => {
-      this.pokeID = +params.id;
+      this.pokeID = params.id;
     });
   }
 
